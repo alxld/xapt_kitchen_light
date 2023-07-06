@@ -31,12 +31,12 @@ class XaptKitchenLight(NewLight):
     def __init__(self) -> None:
         """Initialize Xapt Kitchen Light."""
         super(XaptKitchenLight, self).__init__(
-            "Xapt Kitchen Light", domain=DOMAIN, debug=False, debug_rl=False
+            "Kitchen Light", domain=DOMAIN, debug=False, debug_rl=False
         )
 
-        self.entities["light.xapt_kitchen_group"] = None
-        #self.switch = "Xapt Kitchen Switch"
-        #self.motion_sensors.append("Dining Room Motion Sensor")
+        self.entities["light.kitchen_group"] = None
+        # self.switch = "Xapt Kitchen Switch"
+        # self.motion_sensors.append("Dining Room Motion Sensor")
 
         self.has_brightness_threshold = True
         self.brightness_threshold = 191
